@@ -1,0 +1,9 @@
+.userform {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 900px;
+  margin-left: 105px;
+  margin-top: 60px;
+}

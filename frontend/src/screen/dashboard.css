@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+}
+.sidebar-wrap {
+  position: fixed;
+}
+
+.main-area {
+  flex-grow: 1;
+
+  /* background-color: #4d4d4d; */
+  width: 900px !important;
+  margin-left: 110px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.dashBoardPanne {
+  overflow: scroll;
+  scroll-behavior: auto;
+}
