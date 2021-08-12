@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+.env
+package-lock.json
+yarn.lock
+app/uploads/product/1308-ice-lemon-tea-1726270_640.jpg
