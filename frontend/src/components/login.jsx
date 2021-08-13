@@ -14,13 +14,13 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Joi, { errors } from "joi-browser";
 import Alert from "@material-ui/lab/Alert";
-
+import logo from "../images/logo.png"
 const useStyles = makeStyles((theme) => ({
 	root: {
 		height: "100vh",
 	},
 	image: {
-		backgroundImage: "url(https://source.unsplash.com/random)",
+		backgroundImage: "url(https://cashie.herokuapp.com/static/media/image-login.31df697d.png)",
 		backgroundRepeat: "no-repeat",
 		backgroundColor:
 			theme.palette.type === "light"
@@ -96,12 +96,18 @@ export default function Login(props) {
 	return (
 		<Grid container component="main" className={classes.root}>
 			<CssBaseline />
-			<Grid item xs={false} sm={4} md={7} className={classes.image} />
+			<Grid item xs={false} sm={4} md={7} className={classes.image}>
+				<div className="login_main">
+					  <img src="https://cashie.herokuapp.com/static/media/logo-white.1ea56311.png" alt="Company logo" className="login_logo" />
+					<h1 className="login_h1">WELCOME,</h1>
+					<p className="login_p">Manage properly your business and enjoy the adventages</p>
+				</div>
+				</Grid> 
 			<Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
 				<div className={classes.paper}>
-					<Typography component="h1" variant="h5">
-						Login
-					</Typography>
+					<h2 className="login_sign">
+						Sign In
+					</h2>
 					{error.length !== true &&
 						error.map((er) => <Alert severity="error">{er.message}</Alert>)}
 					{info && <Alert severity="success">{info}</Alert>}
@@ -137,9 +143,7 @@ export default function Login(props) {
 						<Button
 							type="submit"
 							fullWidth
-							variant="contained"
-							color="primary"
-							className={classes.submit}>
+							className="login_btn">
 							Sign In
 						</Button>
 					</form>

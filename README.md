@@ -19,7 +19,7 @@ _The project was built for the purpose of submission of my summer training final
 
 ## Preview Display
 
-![Login Screen](./images/Login.png)
+![Login Screen](./image/Login.png)
 
 <p style="text-align: center">Login Page</p>
 <br>
