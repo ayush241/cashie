@@ -24,7 +24,7 @@ _The project was built for the purpose of submission of my summer training final
 <p style="text-align: center">Login Page</p>
 <br>
 
-![Admin Dashboard](./images/Dashboard.png)
+![Admin Dashboard](./image/Dashboard.png)
 
 <p style="text-align: center;">Dashboard</p>
 
